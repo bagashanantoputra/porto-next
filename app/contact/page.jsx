@@ -29,7 +29,7 @@ const info = [
 
 const Contact = () => {
     const [service, setService] = useState("");
-    const [messageStatus, setMessageStatus] = useState(""); // State untuk status pesan
+    const [messageStatus, setMessageStatus] = useState("");
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -42,13 +42,13 @@ const Contact = () => {
           process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
         )
             .then((result) => {
-                console.log(result.text);
+                console.log(result);
                 setMessageStatus("Message sent successfully ✅");
                 form.current.reset();
                 setService("");
                 setTimeout(() => setMessageStatus(""), 3000); 
             }, (error) => {
-                console.log(error.text);
+                console.log(error);
                 setMessageStatus("Failed to send message ❌");
             });
     };
