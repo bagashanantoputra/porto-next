@@ -36,19 +36,17 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs.sendForm(
-          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-          form.current,
-          process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+            form.current,
+            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
         )
             .then((result) => {
-                console.log(result);
                 setMessageStatus("Message sent successfully ✅");
                 form.current.reset();
                 setService("");
                 setTimeout(() => setMessageStatus(""), 3000); 
             }, (error) => {
-                console.log(error);
                 setMessageStatus("Failed to send message ❌");
             });
     };
@@ -62,7 +60,7 @@ const Contact = () => {
             }}
             className="py-6"
         >
-            <div className="container mx-auto">
+            <div className="container mx-auto pb-10">
                 <div className="flex flex-col xl:flex-row gap-[30px]">
                     <div className="xl:w-[54%] order-2 xl:order-none">
                         <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">

@@ -6,7 +6,7 @@ import { SiTailwindcss, SiNextdotjs, SiGoland, SiBootstrap, SiPhp, SiPostgresql 
 const about = {
     title: "About me",
     description:
-        "Efficitur auctor scelerisque convallis, ultrices dapibus facilisi. Tortor habitant lacinia sodales dui, pulvinar urna tristique.",
+        "My name is Bagas Hananto, a 23-year-old Software Engineer with a strong command of JavaScript, Go, and PHP. Over the course of my career, I've successfully completed two major projects and have worked on several freelance projects. My passion lies in creating efficient and scalable solutions that drive impactful results. I am always eager to learn and explore new technologies to enhance my skills and contribute to the tech community.",
     info: [
         {
             fieldName: "Name",
@@ -47,7 +47,7 @@ const experience = {
     icon:'/assets/resume/badge.svg',
     title: 'My experience',
     description:
-        "Efficitur auctor scelerisque convallis, ultrices dapibus facilisi. Tortor habitant lacinia sodales dui, pulvinar urna tristique.",
+        "As a software engineer, I have hands-on experience in developing and delivering high-quality software solutions. I have successfully completed two major projects, where I was responsible for designing and implementing both frontend and backend systems.",
     items: [
         {
             company: "Ordent Intelektual Digital",
@@ -86,7 +86,7 @@ const education = {
     icon:'/assets/resume/cap.svg',
     title: 'My education',
     description:
-        "Efficitur auctor scelerisque convallis, ultrices dapibus facilisi. Tortor habitant lacinia sodales dui, pulvinar urna tristique.",
+        "I have a solid educational foundation in software engineering, which has equipped me with the technical knowledge and problem-solving skills necessary for my career.",
     items: [
         {
             institution: "University Esa Unggul",
@@ -124,7 +124,7 @@ const education = {
 const skills = {
     title: "My skills",
     description:
-        "Efficitur auctor scelerisque convallis, ultrices dapibus facilisi. Tortor habitant lacinia sodales dui, pulvinar urna tristique.",
+        "I specialize in full-stack development, with a strong foundation in JavaScript, Go, and PHP. My expertise includes building dynamic, responsive web applications and scalable backend systems.",
     skillList: [
         {
             icon: <FaHtml5 />,
