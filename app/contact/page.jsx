@@ -67,8 +67,8 @@ const Contact = () => {
                             <h3 className="text-4xl text-accent">Get In Touch</h3>
                             <p className="text-white/60">Lorem ipsum dolor sit amet mari kenalan sama saya ya jamet.</p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <Input type="text" name="user_name" placeholder="Firstname" required />
-                                <Input type="text" name="user_name" placeholder="Lastname" required />
+                                <Input type="text" name="user_firstname" placeholder="Firstname" required />
+                                <Input type="text" name="user_lastname" placeholder="Lastname" required />
                                 <Input type="email" name="user_email" placeholder="Email address" required />
                                 <Input type="text" name="phone" placeholder="Phone number" required />
                             </div>
