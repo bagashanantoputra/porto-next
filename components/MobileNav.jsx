@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "./ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
@@ -34,7 +34,7 @@ const MobileNav = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleLinkClick = () => {
-        setIsOpen(false); // Close the menu when a link is clicked
+        setIsOpen(false);
     };
 
     return (
@@ -42,7 +42,12 @@ const MobileNav = () => {
             <SheetTrigger className="flex justify-center items-center">
                 <CiMenuFries className="text-[32px] text-accent"/>
             </SheetTrigger>
-            <SheetContent aria-label="Mobile navigation menu" className="flex flex-col">
+            <SheetContent 
+                className="flex flex-col"
+                aria-describedby={undefined} // Tambahkan ini
+            >
+                <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+                
                 <div className="mt-32 mb-32 text-center text-2xl">
                     <Link href="/">
                         <h1 className="text-4xl font-semibold">

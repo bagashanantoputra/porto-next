@@ -45,7 +45,7 @@ const projects = [
     },
     {
         num: "03",
-        category: "fullsctack",
+        category: "fullstack",
         title: "project 3",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. architecto nam reiciendis alias vel?",
         stack: [
@@ -129,12 +129,12 @@ const Work = () => {
                         </div>
                     </div>
                     <div className="w-ful xl:w-[50%]">
-                        <Swiper
-                            spaceBetween={30}
-                            slidePerView={1}
-                            className="xl:h-[520px] mb-12"
-                            onSlideChange={handleSlideChange}
-                        >
+                    <Swiper
+                        spaceBetween={30}
+                        slidesPerView={1} // Ganti dari slidePerView menjadi slidesPerView
+                        className="xl:h-[520px] mb-12"
+                        onSlideChange={handleSlideChange}
+                    >
                             {projects.map((project, index)=>{
                                 return(
                                     <SwiperSlide key={index} className="w-full">
